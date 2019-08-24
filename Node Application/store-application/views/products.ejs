@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <h1>Produt catalog</h1>
+      <hr/>
+      <% for(let i = 0; i<products.length; i++) { %>
+         <li>Product Name - <a href="/api/products/<%= products[i].productId %>"/><%= products[i].name %></li>
+      <% } %>
+</body>
+</html>
